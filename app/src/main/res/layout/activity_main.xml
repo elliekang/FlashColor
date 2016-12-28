@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@android:color/holo_purple"
+    android:gravity="center"
+    android:id="@+id/screen"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6.0"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageButton
+        android:id="@+id/color_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="2"
+        android:background="@android:color/holo_orange_dark"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/btnSwitch"
+        android:src="@drawable/btn_switch_on"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@android:color/holo_green_dark"></ImageButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="@android:color/holo_blue_dark">
+
+        <SeekBar
+            android:id="@+id/intensity_scroller"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"></SeekBar>
+
+        <TextView
+            android:id="@+id/intensity_perc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="15pt"
+            android:textStyle="bold"
+            android:text="0%" />
+    </LinearLayout>
+
+    <!--<ImageButton
+        android:background="@null"
+        android:contentDescription="@null"
+        android:id="@+id/btnSwitch"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/btn_switch_on"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="57dp">
+    </ImageButton>-->
+
+
+</LinearLayout>
